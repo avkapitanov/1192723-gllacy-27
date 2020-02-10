@@ -40,28 +40,36 @@
     </ul>
   </nav>
   <div class="header-controls">
-    <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
-    <form class="header-form-search" method="get" action="">
-      <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
-      <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
-    </form>
+    <div class="search-wrapper">
+      <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
+      <form class="header-form-search" method="get" action="">
+        <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
+        <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
+      </form>
+    </div>
+    <div class="auth-wrapper">
     <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
-    <form class="header-form-auth" method="post" action="">
-      <p class="header-form-auth-field">
-          <label for="user-login">Имя пользователя</label>
-          <input id="user-login" type="text" name="login" placeholder="email@example.com">
-      </p>
-      <p class="header-form-auth-field">
-        <label for="user-password">Пароль</label>
-        <input id="user-password" type="password" name="password" placeholder="">
-      </p>
-      <button class="btn header-form-auth-submit" type="submit" aria-label="Искать">Войти</button>
-      <div class="header-form-auth-links">
-        <a class="header-form-auth-link" href="#">Забыли пароль</a>
-        <a class="header-form-auth-link" href="#">Новая регистрация</a>
-      </div>
-    </form>
-    <a class="header-cart-link header-cart-link-empty">Пусто</a>
+      <form class="header-form-auth" method="post" action="">
+        <p class="header-form-auth-field">
+            <label for="user-login">Имя пользователя</label>
+            <input id="user-login" type="text" name="login" placeholder="email@example.com">
+        </p>
+        <p class="header-form-auth-field">
+          <label for="user-password">Пароль</label>
+          <input id="user-password" type="password" name="password" placeholder="">
+        </p>
+        <div class="header-form-auth-actions">
+          <button class="btn header-form-auth-submit" type="submit" aria-label="Искать">Войти</button>
+          <ul class="header-form-auth-links">
+            <li><a class="header-form-auth-link" href="#">Забыли пароль</a></li>
+            <li><a class="header-form-auth-link" href="#">Новая регистрация</a></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div class="basket-wrapper">
+      <a class="header-cart-link header-cart-link-empty">Пусто</a>
+    </div>
   </div>
   <p class="header-contact-info">
     С 10 до 20, ежедневно

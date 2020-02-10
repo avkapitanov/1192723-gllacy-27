@@ -8,7 +8,7 @@
 <header class="main-header">
   <nav class="main-navigation">
     <a class="main-logo-link">
-      <img class="main-logo-img" src="img/content/content/logo.svg" width="154" height="64" alt="Логотип Глейси">
+      <img class="main-logo-img" src="img/content/logo.svg" width="154" height="64" alt="Логотип Глейси">
     </a>
     <ul class="main-menu">
       <li class="main-menu-item">
@@ -40,47 +40,61 @@
     </ul>
   </nav>
   <div class="header-controls">
-    <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
-    <form class="header-form-search" method="get" action="">
-      <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
-      <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
-    </form>
-    <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
-    <form class="header-form-auth" method="post" action="">
-      <p class="header-form-auth-field">
-        <label for="user-login">Имя пользователя</label>
-        <input id="user-login" type="text" name="login" placeholder="email@example.com">
-      </p>
-      <p class="header-form-auth-field">
-        <label for="user-password">Пароль</label>
-        <input id="user-password" type="password" name="password" placeholder="">
-      </p>
-      <button class="header-form-auth-submit" type="submit" aria-label="Искать">Войти</button>
-      <div class="header-form-auth-links">
-        <a class="header-form-auth-link" href="#">Забыли пароль</a>
-        <a class="header-form-auth-link" href="#">Новая регистрация</a>
+    <div class="search-wrapper">
+      <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
+      <form class="header-form-search" method="get" action="">
+        <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
+        <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
+      </form>
+    </div>
+    <div class="auth-wrapper">
+      <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
+      <form class="header-form-auth" method="post" action="">
+        <p class="header-form-auth-field">
+          <label for="user-login">Имя пользователя</label>
+          <input id="user-login" type="text" name="login" placeholder="email@example.com">
+        </p>
+        <p class="header-form-auth-field">
+          <label for="user-password">Пароль</label>
+          <input id="user-password" type="password" name="password" placeholder="">
+        </p>
+        <div class="header-form-auth-actions">
+          <button class="btn header-form-auth-submit" type="submit" aria-label="Искать">Войти</button>
+          <ul class="header-form-auth-links">
+            <li><a class="header-form-auth-link" href="#">Забыли пароль</a></li>
+            <li><a class="header-form-auth-link" href="#">Новая регистрация</a></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div class="basket-wrapper">
+      <a class="header-cart-link">2 Товара</a>
+      <div class="cart-content-wrapper">
+        <table class="cart-content">
+          <tbody>
+            <tr class="cart-content-line">
+              <td class="cart-item-remove"><button type="button" aria-label="Удалить"></button></td>
+              <td class="cart-item-img"><img src="img/content/cart-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+              <td class="cart-item-name">Пломбир с апельсиновым джемом</td>
+              <td class="cart-item-price"><span>1,5 кг х</span> 200 руб.</td>
+              <td class="cart-item-total">300 руб.</td>
+            </tr>
+            <tr class="cart-content-line">
+              <td class="cart-item-remove"><button type="button" aria-label="Удалить"></button></td>
+              <td class="cart-item-img"><img src="img/content/cart-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+              <td class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td class="cart-item-price"><span>1,5 кг х</span> 300 руб.</td>
+              <td class="cart-item-total">450 руб.</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="cart-content-sum" colspan="5">Итого: 750 руб.</td>
+            </tr>
+          </tfoot>
+        </table>
+        <a class="btn btn-checkout" href="#">Оформить заказ</a>
       </div>
-    </form>
-    <a class="header-cart-link">2 Товара</a>
-    <div class="cart-content-wrapper">
-      <div class="cart-content">
-        <p class="cart-content-line">
-          <button class="cart-item-remove" type="button" aria-label="Удалить"></button>
-          <img src="img/content/cart-1.png" width="33" height="33" alt="">
-          <span class="cart-item-name">Пломбир с апельсиновым джемом</span>
-          <span class="cart-item-price"><span>1,5 кг х</span> 200 руб.</span>
-          <span class="cart-item-total">300 руб.</span>
-        </p>
-        <p class="cart-content-line">
-          <button class="cart-item-remove" type="button" aria-label="Удалить"></button>
-          <img src="img/content/cart-2.png" width="33" height="33" alt="">
-          <span class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</span>
-          <span class="cart-item-price"><span>1,5 кг х</span> 300 руб.</span>
-          <span class="cart-item-total">450 руб.</span>
-        </p>
-      </p>
-      <p class="cart-content-sum">Итого: 750 руб.</p>
-      <a class="btn" href="#">Оформить заказ</a>
     </div>
   </div>
   <p class="header-contact-info">
