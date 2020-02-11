@@ -123,15 +123,15 @@
     <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="sort-filter">
         <legend>Сортировка:</legend>
-        <select class="sort-filter-list" name="sort">
+        <select class="sort-filter-list" name="sort" aria-label="Порядок сортировки">
           <option value="popular">По популярности</option>
           <option value="price">По цене</option>
         </select>
       </fieldset>
       <fieldset class="price-filter">
         <legend>Цена <span class="price-filter-min-value">100</span> руб. - <span class="price-filter-max-value">500</span> руб.</legend>
-        <input type="number" value="0" name="min">
-        <input type="number" value="0" name="max">
+        <input type="number" value="0" name="min" aria-label="Минимальная цена">
+        <input type="number" value="0" name="max" aria-label="Максимальная цена">
 
         <div class="range-slider-track">
           <div class="range-slider-pin range-slider-pin-min"></div>
@@ -420,7 +420,7 @@
 
   <div class="footer-copyright">
     <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/content/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
+      <img src="img/content/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
     </a>
     <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2020</p>
   </div>
