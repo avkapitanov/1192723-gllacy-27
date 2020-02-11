@@ -42,14 +42,14 @@
   <div class="header-controls">
     <div class="search-wrapper">
       <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
-      <form class="header-form-search" method="get" action="">
+      <form class="header-form-search" method="get" action="https://echo.htmlacademy.ru">
         <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
         <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
       </form>
     </div>
     <div class="auth-wrapper">
       <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
-      <form class="header-form-auth" method="post" action="">
+      <form class="header-form-auth" method="post" action="https://echo.htmlacademy.ru">
         <p class="header-form-auth-field">
           <label for="user-login">Имя пользователя</label>
           <input id="user-login" type="text" name="login" placeholder="email@example.com">
@@ -59,7 +59,7 @@
           <input id="user-password" type="password" name="password" placeholder="">
         </p>
         <div class="header-form-auth-actions">
-          <button class="btn header-form-auth-submit" type="submit" aria-label="Искать">Войти</button>
+          <button class="btn header-form-auth-submit" type="submit">Войти</button>
           <ul class="header-form-auth-links">
             <li><a class="header-form-auth-link" href="#">Забыли пароль</a></li>
             <li><a class="header-form-auth-link" href="#">Новая регистрация</a></li>
@@ -112,7 +112,7 @@
       <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
     </li>
     <li class="breadcrumbs-item">
-      Сливочное
+      <a class="breadcrumbs-link">Сливочное</a>
     </li>
   </ul>
 
@@ -120,7 +120,72 @@
 
   <section>
     <h2>Фильтр товаров</h2>
-    <!-- Здесь будет форма -->
+    <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="sort-filter">
+        <legend>Сортировка:</legend>
+        <select class="sort-filter-list" name="sort">
+          <option value="popular">По популярности</option>
+          <option value="price">По цене</option>
+        </select>
+      </fieldset>
+      <fieldset class="price-filter">
+        <legend>Цена <span class="price-filter-min-value">100</span> руб. - <span class="price-filter-max-value">500</span> руб.</legend>
+        <input type="number" value="0" name="min">
+        <input type="number" value="0" name="max">
+
+        <div class="range-slider-track">
+          <div class="range-slider-pin range-slider-pin-min"></div>
+          <div class="range-slider-pin range-slider-pin-max"></div>
+        </div>
+      </fieldset>
+      <fieldset class="fat-filter">
+        <legend>Жирность:</legend>
+        <ul class="fat-filter-list">
+          <li class="fat-filter-item">
+            <input type="radio" name="fat" value="0" id="filter-0">
+            <label for="filter-0">0%</label>
+          </li>
+          <li class="fat-filter-item">
+            <input type="radio" name="fat" value="10" id="filter-10" checked>
+            <label for="filter-10">До 10%</label>
+          </li>
+          <li class="fat-filter-item">
+            <input type="radio" name="fat" value="30" id="filter-30">
+            <label for="filter-30">До 30%</label>
+          </li>
+          <li class="fat-filter-item">
+            <input type="radio" name="fat" value="30-over" id="filter-30-over">
+            <label for="filter-30-over">Выше 30%</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="filler-filter">
+        <legend>Наполнители:</legend>
+        <ul class="filler-filter-list">
+          <li class="filler-filter-item">
+            <input type="checkbox" name="chocolate" id="filler-filter-chocolate" checked>
+            <label for="filler-filter-chocolate">Шоколадные</label>
+          </li>
+          <li class="filler-filter-item">
+            <input type="checkbox" name="sugar" id="filler-filter-sugar" checked>
+            <label for="filler-filter-sugar">Сахарные присыпки</label>
+          </li>
+          <li class="filler-filter-item">
+            <input type="checkbox" name="fruits" id="filler-filter-fruits">
+            <label for="filler-filter-fruits">Фрукты</label>
+          </li>
+          <li class="filler-filter-item">
+            <input type="checkbox" name="syrup" id="filler-filter-syrup">
+            <label for="filler-filter-syrup">Сиропы</label>
+          </li>
+          <li class="filler-filter-item">
+            <input type="checkbox" name="jam" id="filler-filter-jam">
+            <label for="filler-filter-jam">Джемы</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Применить</button>
+    </form>
   </section>
 
   <section class="product-wrapper">
@@ -295,26 +360,29 @@
         </div>
       </li>
     </ul>
-    <ol class="products-pagination">
+    <ul class="products-pagination">
       <li class="products-pagination-item">
-        <a class="products-pagination-link active">1</a>
+        <a class="products-pagination-link prev disabled" href="#" aria-label="Предыдущая страница"></a>
       </li>
       <li class="products-pagination-item">
-        <a class="products-pagination-link" href="#">2</a>
+        <a class="products-pagination-link active" aria-label="Страница 1">1</a>
       </li>
       <li class="products-pagination-item">
-        <a class="products-pagination-link" href="#">3</a>
+        <a class="products-pagination-link" href="#" aria-label="Страница 2">2</a>
       </li>
       <li class="products-pagination-item">
-        <a class="products-pagination-link" href="#">4</a>
+        <a class="products-pagination-link" href="#" aria-label="Страница 3">3</a>
       </li>
       <li class="products-pagination-item">
-        <a class="products-pagination-link" href="#">5</a>
+        <a class="products-pagination-link" href="#" aria-label="Страница 5">4</a>
       </li>
       <li class="products-pagination-item">
-        <a class="products-pagination-link next" href="#"></a>
+        <a class="products-pagination-link" href="#" aria-label="Страница 5">5</a>
       </li>
-    </ol>
+      <li class="products-pagination-item">
+        <a class="products-pagination-link next" href="#" aria-label="Следующая страница"></a>
+      </li>
+    </ul>
   </section>
 
 </main>

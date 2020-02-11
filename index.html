@@ -42,14 +42,14 @@
   <div class="header-controls">
     <div class="search-wrapper">
       <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
-      <form class="header-form-search" method="get" action="">
+      <form class="header-form-search" method="get" action="https://echo.htmlacademy.ru">
         <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
         <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
       </form>
     </div>
     <div class="auth-wrapper">
     <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
-      <form class="header-form-auth" method="post" action="">
+      <form class="header-form-auth" method="post" action="https://echo.htmlacademy.ru">
         <p class="header-form-auth-field">
             <label for="user-login">Имя пользователя</label>
             <input id="user-login" type="text" name="login" placeholder="email@example.com">
@@ -59,7 +59,7 @@
           <input id="user-password" type="password" name="password" placeholder="">
         </p>
         <div class="header-form-auth-actions">
-          <button class="btn header-form-auth-submit" type="submit" aria-label="Искать">Войти</button>
+          <button class="btn header-form-auth-submit" type="submit">Войти</button>
           <ul class="header-form-auth-links">
             <li><a class="header-form-auth-link" href="#">Забыли пароль</a></li>
             <li><a class="header-form-auth-link" href="#">Новая регистрация</a></li>
@@ -86,21 +86,29 @@
       <li class="slider-item">
         <img class="slider-image" src="img/content/slider-1.png" width="647" height="584" alt="">
         <span class="slider-text">Крем-брюле и пломбир<br>с малиновым джемом</span>
+        <button class="btn" type="button" aria-label="Давайте оба! Крем-брюле и пломбир с малиновым джемом">Давайте оба!</button>
       </li>
       <li class="slider-item">
         <img class="slider-image" src="img/content/slider-2.png" width="644" height="582" alt="">
         <span class="slider-text">Шоколадный пломбир<br>и лимонный сорбет</span>
+        <button class="btn" type="button" aria-label="Давайте оба! Шоколадный пломбир и лимонный сорбет">Давайте оба!</button>
       </li>
       <li class="slider-item">
         <img class="slider-image" src="img/content/slider-3.png" width="639" height="582" alt="">
         <span class="slider-text">Пломбир с помадкой<br>и клубничный щербет</span>
+        <button class="btn" type="button" aria-label="Давайте оба! Пломбир с помадкой и клубничный щербет">Давайте оба!</button>
       </li>
     </ul>
-    <button class="btn" type="button">Давайте оба!</button>
     <ul class="slider-navigation">
-      <li class="slider-navigation-item"></li>
-      <li class="slider-navigation-item"></li>
-      <li class="slider-navigation-item"></li>
+      <li class="slider-navigation-item">
+        <button type="button" aria-label="Первый слайд"></button>
+      </li>
+      <li class="slider-navigation-item">
+        <button type="button" aria-label="Второй слайд"></button>
+      </li>
+      <li class="slider-navigation-item">
+        <button type="button" aria-label="Третий слайд"></button>
+      </li>
     </ul>
   </section>
 
@@ -122,7 +130,7 @@
 
   <section class="hit-products-wrapper">
     <h2>Хиты продаж</h2>
-    <ul class="hit-product-list">
+    <ul class="product-list hit-product-list">
       <li class="hit-product-list-item">
         <a href="#">
           <img src="img/content/product-1.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -213,7 +221,7 @@
       <h2 class="subscribe-title">Подписка на рассылку</h2>
       <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
         не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-      <form class="subscribe-form" method="post" action="">
+      <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru">
         <input class="subscribe-form-email" type="email" name="email" value="" placeholder="email@example.com" aria-label="Электронная почта">
         <button class="header-form-search-submit" type="submit" aria-label="Подписаться">Отправить</button>
       </form>
@@ -280,18 +288,18 @@
 </footer>
 
 <div class="modal">
-  <form class="feedback-form" method="post" action="">
+  <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
     <p class="feedback-form-field">
       <label for="feedback-name">Имя и фамилия</label>
       <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
     </p>
     <p class="feedback-form-field">
       <label for="feedback-email">Электронная почта</label>
-      <input id="feedback-email" type="email" name="name" placeholder="email@example.com">
+      <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
     </p>
     <p class="feedback-form-field">
       <label for="feedback-text">Сообщение</label>
-      <textarea id="feedback-text">В свободной форме</textarea>
+      <textarea id="feedback-text" name="message">В свободной форме</textarea>
     </p>
     <button class="feedback-form-submit" type="submit">Отправить</button>
   </form>
