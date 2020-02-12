@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn {
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+}
+
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #ffbc9e;
+}
+
+.main-menu .main-menu-sub {
+  display: none;
+}
+
+.header-contact-info {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+}
+
+.header-contact-info-link {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.advantages-wrapper {
+  color: #000000;
+  background-color: #eee0c4;
+  background: url("../img/bg/adv-bg.jpg") repeat-x 0 0;
+}
+
+.advantages-wrapper-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-wrapper {
+  background-color: #ffffff;
+  background: url("../img/bg/blog-bg.jpg") no-repeat 0 0;
+}
+
+.blog-title {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+.blog-element-link {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+
+.subscribe-wrapper {
+  background-color: #f8f7f4;
+  background: url("../img/bg/subscribe-bg.svg") no-repeat 0 0;
+}
+
+.subscribe-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.footer-social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu-link {
+  font-size: 13px;
+  line-height: 18px;
+}
+.footer-menu-item:first-child a {
+  font-weight: 700;
+}
+
+.footer-copyright-text {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.modal {
+  background-color: #f8f7f4;
+}
+
+.feedback-form-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  font-weight: 400;
+  color: #999999;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+}
+
+.feedback-form input::placeholder{
+  color: #999999;
+}
+
+.Поле_ввода {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(178, 178, 178);
+
+  background-color: rgb(255, 255, 255);
+  opacity: 0.52;
+  position: absolute;
+  left: 384px;
+  top: 398px;
+  width: 271px;
+  height: 48px;
+  z-index: 212;
+}
+
