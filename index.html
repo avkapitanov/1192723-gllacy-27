@@ -13,7 +13,7 @@
     <a class="main-logo-link">
       <img class="main-logo-img" src="img/content/logo.svg" width="154" height="64" alt="Логотип Глейси">
     </a>
-    <ul class="main-menu">
+    <ul class="main-menu reset-default-list">
       <li class="main-menu-item">
         <a class="main-menu-link active" href="catalog.html">Каталог</a>
         <ul class="main-menu-sub">
@@ -45,14 +45,14 @@
   <div class="header-controls">
     <div class="search-wrapper">
       <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
-      <form class="header-form-search" method="get" action="https://echo.htmlacademy.ru">
+      <form class="form header-form-search" method="get" action="https://echo.htmlacademy.ru">
         <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
         <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
       </form>
     </div>
     <div class="auth-wrapper">
-    <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
-      <form class="header-form-auth" method="post" action="https://echo.htmlacademy.ru">
+      <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
+      <form class="form header-form-auth" method="post" action="https://echo.htmlacademy.ru">
         <p class="header-form-auth-field">
             <label for="user-login">Имя пользователя</label>
             <input id="user-login" type="text" name="login" placeholder="email@example.com">
@@ -63,7 +63,7 @@
         </p>
         <div class="header-form-auth-actions">
           <button class="btn header-form-auth-submit" type="submit">Войти</button>
-          <ul class="header-form-auth-links">
+          <ul class="header-form-auth-links reset-default-list">
             <li><a class="header-form-auth-link" href="#">Забыли пароль</a></li>
             <li><a class="header-form-auth-link" href="#">Новая регистрация</a></li>
           </ul>
@@ -84,8 +84,8 @@
   <h1 class="visually-hidden">Глейси - лучшее мороженое в мире</h1>
 
   <section class="slider-wrapper">
-    <h2>Лучшие предложения</h2>
-    <ul class="slider-list">
+    <h2 class="visually-hidden">Лучшие предложения</h2>
+    <ul class="slider-list reset-default-list">
       <li class="slider-item">
         <img class="slider-image" src="img/content/slider-1.png" width="1045" height="881" alt="">
         <span class="slider-text">Крем-брюле и пломбир<br>с малиновым джемом</span>
@@ -102,7 +102,7 @@
         <button class="btn" type="button" aria-label="Давайте оба! Пломбир с помадкой и клубничный щербет">Давайте оба!</button>
       </li>
     </ul>
-    <ul class="slider-navigation">
+    <ul class="slider-navigation reset-default-list">
       <li class="slider-navigation-item">
         <button type="button" aria-label="Первый слайд"></button>
       </li>
@@ -117,7 +117,7 @@
 
   <section class="actions-wrapper">
     <h2 class="visually-hidden">Акции</h2>
-    <ul class="actions-list">
+    <ul class="actions-list reset-default-list">
       <li class="action-item action-item-raspberry">
         <h3 class="action-name">Малинка даром!</h3>
         <p class="action-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -133,16 +133,16 @@
 
   <section class="hit-products-wrapper">
     <h2 class="visually-hidden">Хиты продаж</h2>
-    <ul class="product-list hit-product-list">
+    <ul class="product-list hit-product-list reset-default-list">
       <li class="product-list-item">
         <a href="#">
           <img src="img/content/product-1.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
         </a>
         <p class="product-price">
-          380 <span>₽/кг</span>
+          380 ₽<span class="product-price-measure">/кг</span>
         </p>
-        <h3>
-          <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+        <h3 class="product-name">
+          <a class="product-name-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
         </h3>
         <div class="product-actions">
           <button class="product-fast-view" type="button">Быстрый просмотр</button>
@@ -153,7 +153,7 @@
           <img class="product-image" src="img/content/product-2.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
         </a>
         <p class="product-price">
-          310 <span>₽/кг</span>
+          310 ₽<span class="product-price-measure">/кг</span>
         </p>
         <h3 class="product-name">
           <a class="product-name-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -167,7 +167,7 @@
           <img class="product-image" src="img/content/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
         </a>
         <p class="product-price">
-          355 <span class="product-price-measure">₽/кг</span>
+          355 ₽<span class="product-price-measure">/кг</span>
         </p>
         <h3 class="product-name">
           <a class="product-name-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -181,7 +181,7 @@
           <img class="product-image" src="img/content/product-4.png" width="267" height="267" alt="Сливочное с брусничным джемом">
         </a>
         <p class="product-price">
-          325 <span class="product-price-measure">₽/кг</span>
+          325 ₽<span class="product-price-measure">/кг</span>
         </p>
         <h3 class="product-name">
           <a class="product-name-link" href="#">Сливочное с брусничным джемом</a>
@@ -196,7 +196,7 @@
   <section class="advantages-wrapper">
     <h2 class="visually-hidden">Преимущества</h2>
     <h3 class="advantages-wrapper-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-    <ul class="advantages-list">
+    <ul class="advantages-list reset-default-list">
       <li class="advantages-item">
         <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
       </li>
@@ -224,7 +224,7 @@
       <h2 class="visually-hidden">Подписка на рассылку</h2>
       <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
         не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-      <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru">
+      <form class="form subscribe-form" method="post" action="https://echo.htmlacademy.ru">
         <input class="subscribe-form-email" type="email" name="email" value="" placeholder="email@example.com" aria-label="Электронная почта">
         <button class="btn" type="submit" aria-label="Подписаться">Отправить</button>
       </form>
@@ -234,16 +234,16 @@
   <div class="map-contacts-wrapper">
     <div class="map-wrapper"></div>
     <section class="contacts-wrapper">
-      <h2>Контактная информация</h2>
-      <p>
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <p class="contacts-title address-title">
         Адрес главного офиса<br>
         и офлайн-магазина:
         <address class="contacts-address">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</address>
       </p>
       <p>
-        Для заказов по телефону:
+        <span class="contacts-title">Для заказов по телефону:</span>
         <a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a>
-        (с 10 до 20 ежедневно)
+        <span class="contacts-time">(с 10 до 20 ежедневно)</span>
       </p>
       <a class="btn" href="#">Форма обратной связи</a>
     </section>
@@ -251,7 +251,7 @@
 </main>
 <footer class="main-footer">
 
-  <ul class="footer-social">
+  <ul class="footer-social reset-default-list">
     <li class="footer-social-item">
       <a class="footer-social-link" href="#">Твиттер</a>
     </li>
@@ -266,7 +266,7 @@
     </li>
   </ul>
 
-  <ul class="footer-menu">
+  <ul class="footer-menu reset-default-list">
     <li class="footer-menu-item">
       <a class="footer-menu-link" href="#">Для поставщиков</a>
     </li>
@@ -291,7 +291,7 @@
 </footer>
 
 <div class="modal">
-  <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+  <form class="form feedback-form" method="post" action="https://echo.htmlacademy.ru">
     <p class="feedback-form-title">Мы обязательно вам ответим!</p>
     <p class="feedback-form-field">
       <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>

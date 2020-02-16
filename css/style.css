@@ -1,8 +1,7 @@
 body {
-  margin: 0;
   padding: 0;
 
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -15,6 +14,12 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+
+a:hover,
+a:active {
+  color: #ffbc9e;
+}
+
 
 .visually-hidden {
   position: absolute;
@@ -29,18 +34,31 @@ a {
   overflow: hidden;
 }
 
-.btn {
-  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+.reset-default-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 25px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: inherit;
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+
+  border: none;
+  box-shadow: 0 2px 0 0 #ac1000;
+  cursor: pointer;
+}
 
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
-}
-
-.main-navigation ul {
-  list-style: none;
 }
 
 .main-navigation a:hover,
@@ -50,6 +68,12 @@ a {
 
 .main-menu .main-menu-sub {
   display: none;
+}
+
+.header-form-auth-link {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
 }
 
 .header-contact-info {
@@ -74,12 +98,6 @@ a {
   line-height: 30px;
 }
 
-.advantages-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .blog-wrapper {
   background-color: #ffffff;
   background: url("../img/bg/blog-bg.jpg") no-repeat 0 0;
@@ -90,6 +108,7 @@ a {
   line-height: 22px;
   color: #323232;
 }
+
 .blog-element-link {
   font-size: 24px;
   line-height: 30px;
@@ -106,18 +125,6 @@ a {
   line-height: 22px;
   font-weight: 400;
   color: #5a5a5a;
-}
-
-.footer-social {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .footer-menu-link {
@@ -144,9 +151,10 @@ a {
   color: #323232;
 }
 
-.feedback-form input[type="text"],
-.feedback-form input[type="email"],
-.feedback-form textarea {
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form textarea {
   font-weight: 400;
   color: #999999;
   border: 1px solid #b2b2b2;
@@ -157,18 +165,91 @@ a {
   color: #999999;
 }
 
-.Поле_ввода {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(178, 178, 178);
-
-  background-color: rgb(255, 255, 255);
-  opacity: 0.52;
-  position: absolute;
-  left: 384px;
-  top: 398px;
-  width: 271px;
-  height: 48px;
-  z-index: 212;
+.product-list .product-price {
+  font-size: 45px;
+  line-height: 45px;
 }
 
+.product-list .product-price-measure {
+  font-size: 30px;
+}
+
+.product-name-link {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.products-pagination {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.products-pagination-link.active,
+.products-pagination-link:active {
+  color: #353535;
+}
+
+.filter-form label {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.filter-form legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.slider-list .slider-text {
+  font-size: 60px;
+  line-height: 60.35px;
+  text-align: center;
+}
+
+.actions-list .action-name {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.actions-list .action-text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.actions-list .action-item-raspberry {
+  background: url("../img/bg/action-bg-1.jpg") no-repeat 0 0;
+}
+
+.actions-list .action-item-chocolate {
+  background: url("../img/bg/action-bg-2.jpg") no-repeat 0 0;
+}
+
+.contacts-wrapper {
+  color: #323232;
+}
+
+.contacts-title{
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-address{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts-phone-title {
+
+}
+
+.contacts-phone {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.contacts-time {
+  font-size: 14px;
+  line-height: 22px;
+}
