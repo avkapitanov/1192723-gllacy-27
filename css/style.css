@@ -1,3 +1,30 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+  url('../fonts/roboto.woff2') format('woff2'),
+  url('../fonts/roboto.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+  url('../fonts/robotomedium.woff2') format('woff2'),
+  url('../fonts/robotomedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+  url('../fonts/robotobold.woff2') format('woff2'),
+  url('../fonts/robotobold.woff') format('woff');
+}
+
 body {
   padding: 0;
 
@@ -8,6 +35,16 @@ body {
   color: #ffffff;
 
   background-color: #849d8f;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 a {
@@ -54,6 +91,12 @@ a:active {
   border: none;
   box-shadow: 0 2px 0 0 #ac1000;
   cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 27px;
+  margin: 0 auto;
 }
 
 .main-navigation {
@@ -205,14 +248,28 @@ a:active {
   text-align: center;
 }
 
+.actions-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions-list .action-item {
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+  padding: 17px 20px;
+}
+
 .actions-list .action-name {
   font-size: 35px;
   line-height: 41px;
+  margin: 0;
 }
 
 .actions-list .action-text {
   font-size: 18px;
   line-height: 22px;
+  margin-top: 13px;
 }
 
 .actions-list .action-item-raspberry {
@@ -236,10 +293,6 @@ a:active {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-}
-
-.contacts-phone-title {
-
 }
 
 .contacts-phone {
