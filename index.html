@@ -8,69 +8,71 @@
 </head>
 <body>
 <header class="main-header">
-  <nav class="main-navigation">
-    <a class="main-logo-link">
-      <img class="main-logo-img" src="img/content/logo.svg" width="154" height="64" alt="Логотип Глейси">
-    </a>
-    <ul class="main-menu reset-default-list">
-      <li class="main-menu-item">
-        <a class="main-menu-link active" href="catalog.html">Каталог</a>
-        <ul class="main-menu-sub">
-          <li class="main-menu-sub-item">
-            <a class="main-menu-sub-link" href="#">Новинки</a>
-          </li>
-          <li class="main-menu-sub-item">
-            <a class="main-menu-sub-link" href="catalog.html">Сливочное</a>
-          </li>
-          <li class="main-menu-sub-item">
-            <a class="main-menu-sub-link active" href="#">Щербеты</a>
-          </li>
-          <li class="main-menu-sub-item">
-            <a class="main-menu-sub-link" href="#">Фруктовый лед</a>
-          </li>
-          <li class="main-menu-sub-item">
-            <a class="main-menu-sub-link" href="#">Мелорин</a>
-          </li>
-        </ul>
-      </li>
-      <li class="main-menu-item">
-        <a class="main-menu-link" href="#">Доставка и оплата</a>
-      </li>
-      <li class="main-menu-item">
-        <a class="main-menu-link" href="#">О компании</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="header-controls">
-    <div class="search-wrapper">
-      <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
-      <form class="form header-form-search" method="get" action="https://echo.htmlacademy.ru">
-        <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
-        <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
-      </form>
-    </div>
-    <div class="auth-wrapper">
-      <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
-      <form class="form header-form-auth" method="post" action="https://echo.htmlacademy.ru">
-        <p class="header-form-auth-field">
-            <label for="user-login">Имя пользователя</label>
-            <input id="user-login" type="text" name="login" placeholder="email@example.com">
-        </p>
-        <p class="header-form-auth-field">
-          <label for="user-password">Пароль</label>
-          <input id="user-password" type="password" name="password" placeholder="">
-        </p>
-        <div class="header-form-auth-actions">
-          <button class="btn header-form-auth-submit" type="submit">Войти</button>
-          <ul class="header-form-auth-links reset-default-list">
-            <li><a class="header-form-auth-link" href="#">Забыли пароль</a></li>
-            <li><a class="header-form-auth-link" href="#">Новая регистрация</a></li>
+  <div class="container flex-c">
+    <nav class="main-navigation flex-c">
+      <a class="main-logo-link">
+        <img class="main-logo-img" src="img/content/logo.svg" width="154" height="64" alt="Логотип Глейси">
+      </a>
+      <ul class="main-menu reset-default-list flex-c">
+        <li class="main-menu-item">
+          <a class="main-menu-link active" href="catalog.html">Каталог</a>
+          <ul class="main-menu-sub">
+            <li class="main-menu-sub-item">
+              <a class="main-menu-sub-link" href="#">Новинки</a>
+            </li>
+            <li class="main-menu-sub-item">
+              <a class="main-menu-sub-link" href="catalog.html">Сливочное</a>
+            </li>
+            <li class="main-menu-sub-item">
+              <a class="main-menu-sub-link active" href="#">Щербеты</a>
+            </li>
+            <li class="main-menu-sub-item">
+              <a class="main-menu-sub-link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="main-menu-sub-item">
+              <a class="main-menu-sub-link" href="#">Мелорин</a>
+            </li>
           </ul>
-        </div>
-      </form>
-    </div>
-    <div class="basket-wrapper">
-      <a class="header-cart-link header-cart-link-empty">Пусто</a>
+        </li>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="#">О компании</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-controls flex-c">
+      <div class="header-controls-wrapper search-wrapper">
+        <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
+        <form class="form header-form-search hidden-block" method="get" action="https://echo.htmlacademy.ru">
+          <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
+          <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
+        </form>
+      </div>
+      <div class="header-controls-wrapper auth-wrapper">
+        <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
+        <form class="form header-form-auth hidden-block" method="post" action="https://echo.htmlacademy.ru">
+          <p class="header-form-auth-field">
+              <label for="user-login">Имя пользователя</label>
+              <input id="user-login" type="text" name="login" placeholder="email@example.com">
+          </p>
+          <p class="header-form-auth-field">
+            <label for="user-password">Пароль</label>
+            <input id="user-password" type="password" name="password" placeholder="">
+          </p>
+          <div class="header-form-auth-actions">
+            <button class="btn header-form-auth-submit" type="submit">Войти</button>
+            <ul class="header-form-auth-links reset-default-list">
+              <li><a class="header-form-auth-link" href="#">Забыли пароль</a></li>
+              <li><a class="header-form-auth-link" href="#">Новая регистрация</a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+      <div class="header-controls-wrapper basket-wrapper">
+        <a class="header-cart-link header-cart-link-empty">Пусто</a>
+      </div>
     </div>
   </div>
   <p class="header-contact-info">
@@ -132,7 +134,7 @@
 
   <section class="hit-products-wrapper">
     <h2 class="visually-hidden">Хиты продаж</h2>
-    <ul class="product-list hit-product-list reset-default-list">
+    <ul class="product-list hit-product-list reset-default-list flex-c">
       <li class="product-list-item">
         <a href="#">
           <img src="img/content/product-1.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -195,15 +197,15 @@
   <section class="advantages-wrapper">
     <h2 class="visually-hidden">Преимущества</h2>
     <h3 class="advantages-wrapper-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-    <ul class="advantages-list reset-default-list">
+    <ul class="advantages-list reset-default-list flex-c">
       <li class="advantages-item">
         <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
       </li>
       <li class="advantages-item">
-        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
+        <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
       </li>
       <li class="advantages-item">
-        <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
       </li>
       <li class="advantages-item">
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
@@ -249,47 +251,47 @@
   </div>
 </main>
 <footer class="main-footer">
+  <div class="container flex-c">
+    <ul class="footer-social reset-default-list">
+      <li class="footer-social-item">
+        <a class="footer-social-link" href="#">Твиттер</a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link" href="#">Инстаграм</a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link" href="#">Фейсбук</a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link" href="#">Вконтакте</a>
+      </li>
+    </ul>
 
-  <ul class="footer-social reset-default-list">
-    <li class="footer-social-item">
-      <a class="footer-social-link" href="#">Твиттер</a>
-    </li>
-    <li class="footer-social-item">
-      <a class="footer-social-link" href="#">Инстаграм</a>
-    </li>
-    <li class="footer-social-item">
-      <a class="footer-social-link" href="#">Фейсбук</a>
-    </li>
-    <li class="footer-social-item">
-      <a class="footer-social-link" href="#">Вконтакте</a>
-    </li>
-  </ul>
+    <ul class="footer-menu reset-default-list flex-c">
+      <li class="footer-menu-item">
+        <a class="footer-menu-link" href="#">Для поставщиков</a>
+      </li>
+      <li class="footer-menu-item">
+        <a class="footer-menu-link" href="#">Наши документы</a>
+      </li>
+      <li class="footer-menu-item">
+        <a class="footer-menu-link" href="#">О производстве</a>
+      </li>
+      <li class="footer-menu-item">
+        <a class="footer-menu-link" href="#">Экологические стандарты</a>
+      </li>
+    </ul>
 
-  <ul class="footer-menu reset-default-list">
-    <li class="footer-menu-item">
-      <a class="footer-menu-link" href="#">Для поставщиков</a>
-    </li>
-    <li class="footer-menu-item">
-      <a class="footer-menu-link" href="#">Наши документы</a>
-    </li>
-    <li class="footer-menu-item">
-      <a class="footer-menu-link" href="#">О производстве</a>
-    </li>
-    <li class="footer-menu-item">
-      <a class="footer-menu-link" href="#">Экологические стандарты</a>
-    </li>
-  </ul>
-
-  <div class="footer-copyright">
-    <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/content/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
-    </a>
-    <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2020</p>
+    <div class="footer-copyright">
+      <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/content/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+      </a>
+      <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2020</p>
+    </div>
   </div>
-
 </footer>
 
-<div class="modal">
+<div class="modal hidden-block">
   <form class="form feedback-form" method="post" action="https://echo.htmlacademy.ru">
     <p class="feedback-form-title">Мы обязательно вам ответим!</p>
     <p class="feedback-form-field">
