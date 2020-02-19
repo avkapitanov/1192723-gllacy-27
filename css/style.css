@@ -395,6 +395,26 @@ a:active {
   margin-left: 10px;
 }
 
+.header-btn {
+  cursor: pointer;
+}
+
+.header-btn-search,
+.header-auth {
+  background: none;
+  border: none;
+}
+
+.header-btn-search svg,
+.header-auth svg {
+  fill: #ffffff;
+}
+
+.header-btn-search:hover svg,
+.header-auth:hover svg {
+  fill: #323232;
+}
+
 .footer-menu {
   display: flex;
   width: 326px;

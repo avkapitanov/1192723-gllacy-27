@@ -44,14 +44,23 @@
     </nav>
     <div class="header-controls">
       <div class="header-controls-wrapper search-wrapper">
-        <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
+        <button class="header-btn header-btn-search" aria-label="Поиск по сайту">
+          <svg width="17" height="17">
+            <use xlink:href="img/icons/icons-sprite.svg#search"></use>
+          </svg>
+        </button>
         <form class="form header-form-search" method="get" action="https://echo.htmlacademy.ru">
           <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
           <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
         </form>
       </div>
       <div class="header-controls-wrapper auth-wrapper">
-        <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
+        <button class="header-btn header-auth" aria-label="Авторизация">
+          <svg width="21" height="19">
+            <use xlink:href="img/icons/icons-sprite.svg#sign-in"></use>
+          </svg>
+          Вход
+        </button>
         <form class="form header-form-auth" method="post" action="https://echo.htmlacademy.ru">
           <p class="header-form-auth-field">
               <label for="user-login">Имя пользователя</label>
