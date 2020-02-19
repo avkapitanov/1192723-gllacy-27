@@ -8,105 +8,107 @@
 </head>
 <body>
 <header class="main-header">
-  <nav class="main-navigation">
-    <a class="main-logo-link" href="index.html">
-      <img class="main-logo-img" src="img/content/logo.svg" width="154" height="64" alt="Логотип Глейси">
-    </a>
-    <ul class="main-menu reset-default-list">
-      <li class="main-menu-item">
-        <a class="main-menu-link active" href="catalog.html">Каталог</a>
-        <ul class="main-menu-sub">
-          <li class="main-menu-sub-item">
-            <a class="main-menu-sub-link" href="#">Новинки</a>
-          </li>
-          <li class="main-menu-sub-item">
-            <a class="main-menu-sub-link" href="catalog.html">Сливочное</a>
-          </li>
-          <li class="main-menu-sub-item">
-            <a class="main-menu-sub-link active" href="#">Щербеты</a>
-          </li>
-          <li class="main-menu-sub-item">
-            <a class="main-menu-sub-link" href="#">Фруктовый лед</a>
-          </li>
-          <li class="main-menu-sub-item">
-            <a class="main-menu-sub-link" href="#">Мелорин</a>
-          </li>
-        </ul>
-      </li>
-      <li class="main-menu-item">
-        <a class="main-menu-link" href="#">Доставка и оплата</a>
-      </li>
-      <li class="main-menu-item">
-        <a class="main-menu-link" href="#">О компании</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="header-controls">
-    <div class="search-wrapper">
-      <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
-      <form class="form header-form-search" method="get" action="https://echo.htmlacademy.ru">
-        <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
-        <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
-      </form>
-    </div>
-    <div class="auth-wrapper">
-      <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
-      <form class="form header-form-auth" method="post" action="https://echo.htmlacademy.ru">
-        <p class="header-form-auth-field">
-          <label for="user-login">Имя пользователя</label>
-          <input id="user-login" type="text" name="login" placeholder="email@example.com">
-        </p>
-        <p class="header-form-auth-field">
-          <label for="user-password">Пароль</label>
-          <input id="user-password" type="password" name="password" placeholder="">
-        </p>
-        <div class="header-form-auth-actions">
-          <button class="btn header-form-auth-submit" type="submit">Войти</button>
-          <ul class="header-form-auth-links reset-default-list">
-            <li><a class="header-form-auth-link" href="#">Забыли пароль</a></li>
-            <li><a class="header-form-auth-link" href="#">Новая регистрация</a></li>
+  <div class="container">
+    <nav class="main-navigation">
+      <a class="main-logo-link" href="index.html">
+        <img class="main-logo-img" src="img/content/logo.svg" width="154" height="64" alt="Логотип Глейси">
+      </a>
+      <ul class="main-menu reset-default-list">
+        <li class="main-menu-item">
+          <a class="main-menu-link active" href="catalog.html">Каталог</a>
+          <ul class="main-menu-sub">
+            <li class="main-menu-sub-item">
+              <a class="main-menu-sub-link" href="#">Новинки</a>
+            </li>
+            <li class="main-menu-sub-item">
+              <a class="main-menu-sub-link" href="catalog.html">Сливочное</a>
+            </li>
+            <li class="main-menu-sub-item">
+              <a class="main-menu-sub-link active" href="#">Щербеты</a>
+            </li>
+            <li class="main-menu-sub-item">
+              <a class="main-menu-sub-link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="main-menu-sub-item">
+              <a class="main-menu-sub-link" href="#">Мелорин</a>
+            </li>
           </ul>
+        </li>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="#">О компании</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-controls">
+      <div class="search-wrapper">
+        <button class="header-btn header-btn-search" aria-label="Поиск по сайту"></button>
+        <form class="form header-form-search" method="get" action="https://echo.htmlacademy.ru">
+          <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
+          <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
+        </form>
+      </div>
+      <div class="auth-wrapper">
+        <button class="header-btn header-auth" aria-label="Авторизация">Вход</button>
+        <form class="form header-form-auth" method="post" action="https://echo.htmlacademy.ru">
+          <p class="header-form-auth-field">
+            <label for="user-login">Имя пользователя</label>
+            <input id="user-login" type="text" name="login" placeholder="email@example.com">
+          </p>
+          <p class="header-form-auth-field">
+            <label for="user-password">Пароль</label>
+            <input id="user-password" type="password" name="password" placeholder="">
+          </p>
+          <div class="header-form-auth-actions">
+            <button class="btn header-form-auth-submit" type="submit">Войти</button>
+            <ul class="header-form-auth-links reset-default-list">
+              <li><a class="header-form-auth-link" href="#">Забыли пароль</a></li>
+              <li><a class="header-form-auth-link" href="#">Новая регистрация</a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+      <div class="basket-wrapper">
+        <a class="header-cart-link">2 Товара</a>
+        <div class="cart-content-wrapper">
+          <table class="cart-content">
+            <tbody>
+              <tr class="cart-content-line">
+                <td class="cart-item-remove"><button type="button" aria-label="Удалить"></button></td>
+                <td class="cart-item-img"><img src="img/content/cart-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                <td class="cart-item-name">Пломбир с апельсиновым джемом</td>
+                <td class="cart-item-price"><span>1,5 кг х</span> 200 руб.</td>
+                <td class="cart-item-total">300 руб.</td>
+              </tr>
+              <tr class="cart-content-line">
+                <td class="cart-item-remove"><button type="button" aria-label="Удалить"></button></td>
+                <td class="cart-item-img"><img src="img/content/cart-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                <td class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="cart-item-price"><span>1,5 кг х</span> 300 руб.</td>
+                <td class="cart-item-total">450 руб.</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="cart-content-sum" colspan="5">Итого: 750 руб.</td>
+              </tr>
+            </tfoot>
+          </table>
+          <a class="btn btn-checkout" href="#">Оформить заказ</a>
         </div>
-      </form>
-    </div>
-    <div class="basket-wrapper">
-      <a class="header-cart-link">2 Товара</a>
-      <div class="cart-content-wrapper">
-        <table class="cart-content">
-          <tbody>
-            <tr class="cart-content-line">
-              <td class="cart-item-remove"><button type="button" aria-label="Удалить"></button></td>
-              <td class="cart-item-img"><img src="img/content/cart-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-              <td class="cart-item-name">Пломбир с апельсиновым джемом</td>
-              <td class="cart-item-price"><span>1,5 кг х</span> 200 руб.</td>
-              <td class="cart-item-total">300 руб.</td>
-            </tr>
-            <tr class="cart-content-line">
-              <td class="cart-item-remove"><button type="button" aria-label="Удалить"></button></td>
-              <td class="cart-item-img"><img src="img/content/cart-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-              <td class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td class="cart-item-price"><span>1,5 кг х</span> 300 руб.</td>
-              <td class="cart-item-total">450 руб.</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td class="cart-content-sum" colspan="5">Итого: 750 руб.</td>
-            </tr>
-          </tfoot>
-        </table>
-        <a class="btn btn-checkout" href="#">Оформить заказ</a>
       </div>
     </div>
+    <p class="header-contact-info">
+      С 10 до 20, ежедневно
+      <a class="header-contact-info-link" href="tel:88124502525">8 812 450-25-25</a>
+    </p>
   </div>
-  <p class="header-contact-info">
-    С 10 до 20, ежедневно
-    <a class="header-contact-info-link" href="tel:88124502525">8 812 450-25-25</a>
-  </p>
 </header>
 <main>
  <div class="container">
-   <ul class="breadcrumbs flex-c reset-default-list">
+   <ul class="breadcrumbs reset-default-list">
      <li class="breadcrumbs-item">
        <a class="breadcrumbs-link" href="index.html">Главная</a>
      </li>
@@ -192,7 +194,7 @@
 
    <section class="product-wrapper">
      <h2>Список мороженого</h2>
-     <ul class="product-list reset-default-list flex-c">
+     <ul class="product-list reset-default-list">
        <li class="product-list-item">
          <a class="product-image-link" href="#">
            <img class="product-image" src="img/content/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -389,44 +391,44 @@
  </div>
 </main>
 <footer class="main-footer">
+  <div class="container">
+    <ul class="footer-social reset-default-list">
+      <li class="footer-social-item">
+        <a class="footer-social-link" href="#">Твиттер</a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link" href="#">Инстаграм</a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link" href="#">Фейсбук</a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link" href="#">Вконтакте</a>
+      </li>
+    </ul>
 
-  <ul class="footer-social reset-default-list">
-    <li class="footer-social-item">
-      <a class="footer-social-link" href="#">Твиттер</a>
-    </li>
-    <li class="footer-social-item">
-      <a class="footer-social-link" href="#">Инстаграм</a>
-    </li>
-    <li class="footer-social-item">
-      <a class="footer-social-link" href="#">Фейсбук</a>
-    </li>
-    <li class="footer-social-item">
-      <a class="footer-social-link" href="#">Вконтакте</a>
-    </li>
-  </ul>
+    <ul class="footer-menu reset-default-list">
+      <li class="footer-menu-item">
+        <a class="footer-menu-link" href="#">Для поставщиков</a>
+      </li>
+      <li class="footer-menu-item">
+        <a class="footer-menu-link" href="#">Наши документы</a>
+      </li>
+      <li class="footer-menu-item">
+        <a class="footer-menu-link" href="#">О производстве</a>
+      </li>
+      <li class="footer-menu-item">
+        <a class="footer-menu-link" href="#">Экологические стандарты</a>
+      </li>
+    </ul>
 
-  <ul class="footer-menu reset-default-list">
-    <li class="footer-menu-item">
-      <a class="footer-menu-link" href="#">Для поставщиков</a>
-    </li>
-    <li class="footer-menu-item">
-      <a class="footer-menu-link" href="#">Наши документы</a>
-    </li>
-    <li class="footer-menu-item">
-      <a class="footer-menu-link" href="#">О производстве</a>
-    </li>
-    <li class="footer-menu-item">
-      <a class="footer-menu-link" href="#">Экологические стандарты</a>
-    </li>
-  </ul>
-
-  <div class="footer-copyright">
-    <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/content/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
-    </a>
-    <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2020</p>
+    <div class="footer-copyright">
+      <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/content/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+      </a>
+      <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2020</p>
+    </div>
   </div>
-
 </footer>
 </body>
 </html>

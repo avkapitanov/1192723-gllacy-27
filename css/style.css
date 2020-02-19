@@ -102,11 +102,14 @@ a:active {
   margin: 0 auto;
 }
 
-.flex-c {
+.main-header .container {
   display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .main-navigation {
+  display: flex;
   font-size: 16px;
   line-height: 18px;
 
@@ -123,6 +126,10 @@ a:active {
   color: #ffbc9e;
 }
 
+.main-menu {
+  display: flex;
+}
+
 .main-menu .main-menu-sub {
   display: none;
 }
@@ -137,7 +144,20 @@ a:active {
   color: #323232;
 }
 
+.header-controls {
+  display: flex;
+}
+
+.header-controls .header-form-search,
+.header-controls .header-form-auth {
+  display: none;
+}
+
 .header-contact-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 16px;
   text-align: right;
@@ -148,8 +168,13 @@ a:active {
   line-height: 24px;
 }
 
+.best-product-slider .slider-item:not(:nth-child(1)) {
+  display: none;
+}
+
 .advantages-wrapper {
   padding: 30px 20px;
+  margin-bottom: 40px;
   border-radius: 15px;
   color: #000000;
   background-color: #eee0c4;
@@ -157,6 +182,7 @@ a:active {
 }
 
 .advantages-list {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -173,9 +199,18 @@ a:active {
   padding-left: 57px;
 }
 
+.blog-subscribe-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .blog-wrapper {
+  width: 560px;
+  padding: 25px 20px;
   background-color: #ffffff;
   background: url("../img/bg/blog-bg.jpg") no-repeat 0 0;
+  border-radius: 15px;
 }
 
 .blog-title {
@@ -191,6 +226,8 @@ a:active {
 }
 
 .subscribe-wrapper {
+  width: 560px;
+  padding: 35px 25px;
   background-color: #f8f7f4;
   background: url("../img/bg/subscribe-bg.svg") no-repeat 0 0;
 }
@@ -216,6 +253,7 @@ a:active {
 }
 
 .modal {
+  display: none;
   background-color: #f8f7f4;
 }
 
@@ -238,6 +276,10 @@ a:active {
 
 .feedback-form input::placeholder{
   color: #999999;
+}
+
+.product-list {
+  display: flex;
 }
 
 .product-list .product-price {
@@ -339,13 +381,14 @@ a:active {
   line-height: 22px;
 }
 
-.main-header .container,
 .main-footer .container {
+  display: flex;
   justify-content: space-between;
 }
 
 .header-controls {
-  justify-content: flex-end;
+  width: 235px;
+  justify-content: space-between;
   align-items: center;
 }
 .header-controls-wrapper {
@@ -353,6 +396,7 @@ a:active {
 }
 
 .footer-menu {
+  display: flex;
   width: 326px;
   flex-wrap: wrap;
 }
@@ -362,6 +406,14 @@ a:active {
 }
 
 /*Catalog Page*/
+.basket-wrapper .cart-content-wrapper {
+  display: none;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
 .breadcrumbs .breadcrumbs-item {
   margin-right: 22px;
 }
