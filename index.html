@@ -240,25 +240,26 @@
         </form>
       </section>
     </div>
-
-    <div class="map-contacts-wrapper">
-      <div class="map-wrapper"></div>
-      <section class="contacts-wrapper">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contacts-title address-title">
-          Адрес главного офиса<br>
-          и офлайн-магазина:
-          <address class="contacts-address">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</address>
-        </p>
-        <p>
-          <span class="contacts-title">Для заказов по телефону:</span>
-          <a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a>
-          <span class="contacts-time">(с 10 до 20 ежедневно)</span>
-        </p>
-        <a class="btn" href="#">Форма обратной связи</a>
-      </section>
-    </div>
   </div>
+
+  <div class="map-contacts-wrapper">
+    <div id="map" class="map-wrapper"></div>
+    <section class="contacts-wrapper">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <p class="contacts-title address-title">
+        Адрес главного офиса<br>
+        и офлайн-магазина:
+      <address class="contacts-address">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</address>
+      </p>
+      <p>
+        <span class="contacts-title">Для заказов по телефону:</span>
+        <a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a>
+        <span class="contacts-time">(с 10 до 20 ежедневно)</span>
+      </p>
+      <a class="btn" href="#">Форма обратной связи</a>
+    </section>
+  </div>
+
 </main>
 <footer class="main-footer">
   <div class="container">
@@ -320,5 +321,9 @@
   </form>
   <button type="button" aria-label="Закрыть окно"></button>
 </div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=a060f0dc-9adb-4d54-a6d2-848cd1609e46"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>

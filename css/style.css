@@ -322,6 +322,14 @@ a:active {
   text-align: center;
 }
 
+.slider-navigation li{
+  display: inline-block;
+}
+
+.actions-wrapper {
+  margin-bottom: 40px;
+}
+
 .actions-list {
   display: flex;
   justify-content: space-between;
@@ -354,8 +362,28 @@ a:active {
   background: url("../img/bg/action-bg-2.jpg") no-repeat 0 0;
 }
 
+.hit-products-wrapper {
+  margin-bottom: 40px;
+}
+
+.map-contacts-wrapper {
+  height: 430px;
+  position: relative;
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
 .contacts-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 50%;
+  margin-right: -573px;
   color: #323232;
+  background-color: #fefefe;
+  width: 302px;
 }
 
 .contacts-title{
@@ -438,6 +466,25 @@ a:active {
   margin-right: 22px;
 }
 
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.fat-filter-list,
+.filler-filter-list {
+  display: flex;
+}
+
+.product-wrapper {
+  margin-bottom: 30px;
+}
+
 .product-list {
   flex-wrap: wrap;
 }
@@ -456,4 +503,17 @@ a:active {
 
   font-weight: 500;
   text-align: center;
+}
+
+.products-pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.products-pagination-link {
+  display: block;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
 }
