@@ -15,7 +15,7 @@
       </a>
       <ul class="main-menu reset-default-list">
         <li class="main-menu-item">
-          <a class="main-menu-link active" href="catalog.html">Каталог</a>
+          <a class="main-menu-link" href="catalog.html">Каталог</a>
           <ul class="main-menu-sub">
             <li class="main-menu-sub-item">
               <a class="main-menu-sub-link" href="#">Новинки</a>
@@ -51,24 +51,23 @@
         </button>
         <form class="form header-form-search" method="get" action="https://echo.htmlacademy.ru">
           <input class="header-form-search-query" type="text" name="query" value="" placeholder="Крем-брюле" aria-label="Поисковый запрос">
-          <button class="header-form-search-submit" type="submit" aria-label="Искать"></button>
+          <button class="header-form-search-submit visually-hidden" type="submit" aria-label="Искать"></button>
         </form>
       </div>
       <div class="header-controls-wrapper auth-wrapper">
         <button class="header-btn header-auth" aria-label="Авторизация">
           <svg width="21" height="19">
             <use xlink:href="img/icons/icons-sprite.svg#sign-in"></use>
-          </svg>
-          Вход
+          </svg>Вход
         </button>
         <form class="form header-form-auth" method="post" action="https://echo.htmlacademy.ru">
           <p class="header-form-auth-field">
-              <label for="user-login">Имя пользователя</label>
+              <label class="visually-hidden" for="user-login">Имя пользователя</label>
               <input id="user-login" type="text" name="login" placeholder="email@example.com">
           </p>
           <p class="header-form-auth-field">
-            <label for="user-password">Пароль</label>
-            <input id="user-password" type="password" name="password" placeholder="">
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input id="user-password" type="password" name="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
           </p>
           <div class="header-form-auth-actions">
             <button class="btn header-form-auth-submit" type="submit">Войти</button>
@@ -80,7 +79,11 @@
         </form>
       </div>
       <div class="header-controls-wrapper basket-wrapper">
-        <a class="header-cart-link header-cart-link-empty">Пусто</a>
+        <a class="header-cart-link header-cart-link-empty header-btn">
+          <svg width="21" height="20">
+            <use xlink:href="img/icons/icons-sprite.svg#basket-empty"></use>
+          </svg>Пусто
+        </a>
       </div>
     </div>
     <p class="header-contact-info">
@@ -146,13 +149,13 @@
       <ul class="product-list hit-product-list reset-default-list">
         <li class="product-list-item">
           <a href="#">
-            <img src="img/content/product-1.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <img src="img/content/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           </a>
           <p class="product-price">
             380 ₽<span class="product-price-measure">/кг</span>
           </p>
           <h3 class="product-name">
-            <a class="product-name-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="product-name-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </h3>
           <div class="product-actions">
             <button class="product-fast-view" type="button">Быстрый просмотр</button>
@@ -160,13 +163,13 @@
         </li>
         <li class="product-list-item">
           <a class="product-image-link" href="#">
-            <img class="product-image" src="img/content/product-2.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <img class="product-image" src="img/content/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           </a>
           <p class="product-price">
             310 ₽<span class="product-price-measure">/кг</span>
           </p>
           <h3 class="product-name">
-            <a class="product-name-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="product-name-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
           </h3>
           <div class="product-actions">
             <button class="product-fast-view" type="button">Быстрый просмотр</button>
@@ -265,16 +268,36 @@
   <div class="container">
     <ul class="footer-social reset-default-list">
       <li class="footer-social-item">
-        <a class="footer-social-link" href="#">Твиттер</a>
+        <a class="footer-social-link" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/icons/icons-sprite.svg#social-twitter"></use>
+          </svg>
+          <span class="visually-hidden">Твиттер</span>
+        </a>
       </li>
       <li class="footer-social-item">
-        <a class="footer-social-link" href="#">Инстаграм</a>
+        <a class="footer-social-link" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/icons/icons-sprite.svg#social-inst"></use>
+          </svg>
+          <span class="visually-hidden">Инстаграм</span>
+        </a>
       </li>
       <li class="footer-social-item">
-        <a class="footer-social-link" href="#">Фейсбук</a>
+        <a class="footer-social-link" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/icons/icons-sprite.svg#social-fb"></use>
+          </svg>
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
       </li>
       <li class="footer-social-item">
-        <a class="footer-social-link" href="#">Вконтакте</a>
+        <a class="footer-social-link" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/icons/icons-sprite.svg#social-vk"></use>
+          </svg>
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
       </li>
     </ul>
 
