@@ -210,7 +210,7 @@ a:active {
   padding: 30px 20px;
   margin-bottom: 40px;
   border-radius: 15px;
-  color: #000000;
+  color: #323232;
   background-color: #eee0c4;
   background: url("../img/bg/adv-bg.jpg") repeat-x 0 0;
 }
@@ -229,8 +229,46 @@ a:active {
 }
 
 .advantages-item {
-  width: 530px;
+  position: relative;
+  width: 535px;
   padding-left: 57px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.advantages-item p {
+  margin: 13px 0;
+}
+
+.advantages-item:nth-last-of-type(-n+2) p{
+  margin-bottom: 0;
+}
+
+.advantages-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 49px;
+  height: 49px;
+}
+
+.advantages-item-ice::before {
+  background: url("../img/icons/adv-ice-cream.svg") no-repeat center center;
+}
+
+.advantages-item-cow::before {
+  background: url("../img/icons/adv-cow.svg") no-repeat center center;
+}
+
+.advantages-item-leaf::before {
+  background: url("../img/icons/adv-leaf.svg") no-repeat center center;
+}
+
+.advantages-item-therm::before {
+  background: url("../img/icons/adv-thermometer.svg") no-repeat center center;
 }
 
 .blog-subscribe-wrapper {
@@ -251,19 +289,38 @@ a:active {
   font-size: 16px;
   line-height: 22px;
   color: #323232;
+  margin: 0;
+}
+
+.blog-element-name {
+  width: 290px;
+  margin: 5px 0;
 }
 
 .blog-element-link {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
+  border-bottom: 2px solid #353535;
 }
 
 .subscribe-wrapper {
+  position: relative;
   width: 560px;
-  padding: 35px 25px;
-  background-color: #f8f7f4;
   background: url("../img/bg/subscribe-bg.svg") no-repeat 0 0;
+  border-radius: 15px;
+  min-height: 220px;
+}
+
+.subscribe-wrapper .subscribe-container {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
+  padding: 30px 20px;
 }
 
 .subscribe-text {
@@ -271,6 +328,16 @@ a:active {
   line-height: 22px;
   font-weight: 400;
   color: #5a5a5a;
+  margin: 0;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 40px;
+}
+
+.subscribe-form .subscribe-form-email {
+  margin-right: 10px;
 }
 
 .footer-menu-link {
@@ -321,6 +388,7 @@ a:active {
 .product-list .product-price {
   font-size: 45px;
   line-height: 45px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .product-list .product-price-measure {
@@ -443,10 +511,13 @@ a:active {
 .main-footer .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .header-controls {
-  width: 244px;
+  width: 250px;
   justify-content: space-between;
   align-items: center;
 }
@@ -514,6 +585,7 @@ a:active {
 .header-form-search {
   position: absolute;
   right: 0;
+  top: 37px;
   width: 277px;
   padding: 20px 18px;
 
@@ -534,7 +606,7 @@ a:active {
 }
 
 .header-btn-search {
-  padding: 7px;
+  padding: 8px;
 }
 
 .search-wrapper:hover form {
@@ -559,6 +631,14 @@ a:active {
 
 .footer-social {
   display: flex;
+}
+
+.footer-social-item {
+  margin-right: 11px;
+}
+
+.footer-social-item:last-child {
+  margin-right: 0;
 }
 
 .footer-social-link {
@@ -649,14 +729,26 @@ a:active {
   position: relative;
   width: 267px;
   margin-right: 26px;
-}
-
-.product-list-item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 10;
 }
 
 .product-list-item:hover .product-actions {
   display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+  top: -6px;
+  left: -13px;
+  right: -13px;
+  bottom: -60px;
+  border-radius: 5px;
+}
+
+.product-fast-view {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hit-product-list .product-list-item::before {
