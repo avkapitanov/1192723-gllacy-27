@@ -141,6 +141,14 @@ a:active {
   color: #323232;
 }
 
+.main-menu-link span {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.main-menu-link:hover span {
+  border: none;
+}
+
 .main-menu .main-menu-sub {
   display: none;
   border-radius: 5px;
@@ -148,19 +156,45 @@ a:active {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   position: absolute;
   margin: 0;
-  padding: 14px 20px;
+  margin-top: 13px;
+  padding: 7px 0;
   list-style: none;
   z-index: 10;
 }
 
-.main-menu-sub .main-menu-sub-link {
+.main-menu-sub-item:first-child {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(53, 53, 53, .2);
+  font-weight: 700;
+}
+
+.main-menu-sub .main-menu-sub-link,
+.main-menu-sub .main-menu-sub-link:hover,
+.main-menu-sub .main-menu-sub-link:active {
   font-size: 14px;
   line-height: 16px;
   color: #323232;
 }
 
-.main-menu-link {
-  border-bottom: 1px solid rgba(255,255,255,.2);
+.main-menu-sub .main-menu-sub-link.active {
+  background-color: #d07058;
+}
+
+.main-menu-sub-link {
+  display: block;
+  padding: 7px 20px;
+}
+
+.main-menu-sub-item:hover {
+  background-color: #fbded7;
+}
+
+.main-menu-sub-item:active {
+  background-color: #f6b5a5;
+}
+
+.main-menu-item:hover .main-menu-sub {
+  display: block;
 }
 
 .main-menu-link.active {
@@ -344,13 +378,36 @@ a:active {
   font-size: 13px;
   line-height: 18px;
 }
-.footer-menu-item:first-child a {
+
+.footer-menu-item {
+  width: 50%;
+}
+
+.footer-menu-item:nth-child(odd) {
+  padding-left: 22px;
+}
+
+.footer-menu-item-love {
   font-weight: 700;
+  position: relative;
+}
+
+.footer-menu-item-love::before {
+  content: "";
+  background: url("../img/icons/heart.svg");
+  width: 15px;
+  height: 13px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
 }
 
 .footer-copyright-text {
   font-size: 12px;
   line-height: 18px;
+  margin: 0;
+  margin-top: 5px;
 }
 
 .modal {
@@ -623,9 +680,19 @@ a:active {
   margin: 0 0 20px;
 }
 
+.footer-menu-link,
+.footer-copyright-text a {
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.footer-menu-link:hover,
+.footer-copyright-text a:hover {
+  border-bottom: 1px solid rgba(249, 172, 159, .3);
+}
+
 .footer-menu {
   display: flex;
-  width: 326px;
+  width: 330px;
   flex-wrap: wrap;
 }
 
@@ -659,6 +726,10 @@ a:active {
 .footer-social-link svg {
   fill: #ffffff;
   opacity: 0.8;
+}
+
+.footer-copyright-logo img {
+  display: block;
 }
 
 /*Catalog Page*/
@@ -729,6 +800,9 @@ a:active {
   position: relative;
   width: 267px;
   margin-right: 26px;
+}
+
+.product-list-item:hover {
   z-index: 10;
 }
 
