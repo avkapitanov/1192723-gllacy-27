@@ -122,73 +122,80 @@
 
    <h1>Сливочное мороженое</h1>
 
-   <section>
+   <section class="filter-section">
      <h2 class="visually-hidden">Фильтр товаров</h2>
      <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
        <fieldset class="sort-filter">
          <legend>Сортировка:</legend>
-         <select class="sort-filter-list" name="sort" aria-label="Порядок сортировки">
-           <option value="popular">По популярности</option>
-           <option value="price">По цене</option>
-         </select>
+         <div class="filter-content">
+           <select class="sort-filter-list" name="sort" aria-label="Порядок сортировки">
+             <option value="popular">По популярности</option>
+             <option value="price">По цене</option>
+           </select>
+         </div>
        </fieldset>
        <fieldset class="price-filter">
          <legend>Цена <span class="price-filter-min-value">100</span> руб. - <span class="price-filter-max-value">500</span> руб.</legend>
-         <input type="number" value="0" name="min" aria-label="Минимальная цена">
-         <input type="number" value="0" name="max" aria-label="Максимальная цена">
-
-         <div class="range-slider-track">
-           <div class="range-slider-pin range-slider-pin-min"></div>
-           <div class="range-slider-pin range-slider-pin-max"></div>
+         <div class="filter-content">
+           <input type="number" value="0" name="min" aria-label="Минимальная цена">
+           <input type="number" value="0" name="max" aria-label="Максимальная цена">
+           <div class="range-slider-track">
+             <div class="range-slider-pin range-slider-pin-min"></div>
+             <div class="range-slider-pin range-slider-pin-max"></div>
+           </div>
          </div>
        </fieldset>
        <fieldset class="fat-filter">
          <legend>Жирность:</legend>
-         <ul class="fat-filter-list reset-default-list">
-           <li class="fat-filter-item">
-             <input type="radio" name="fat" value="0" id="filter-0">
-             <label for="filter-0">0%</label>
-           </li>
-           <li class="fat-filter-item">
-             <input type="radio" name="fat" value="10" id="filter-10" checked>
-             <label for="filter-10">До 10%</label>
-           </li>
-           <li class="fat-filter-item">
-             <input type="radio" name="fat" value="30" id="filter-30">
-             <label for="filter-30">До 30%</label>
-           </li>
-           <li class="fat-filter-item">
-             <input type="radio" name="fat" value="30-over" id="filter-30-over">
-             <label for="filter-30-over">Выше 30%</label>
-           </li>
-         </ul>
+         <div class="filter-content">
+           <ul class="fat-filter-list reset-default-list">
+             <li class="fat-filter-item">
+               <input type="radio" name="fat" value="0" id="filter-0">
+               <label for="filter-0">0%</label>
+             </li>
+             <li class="fat-filter-item">
+               <input type="radio" name="fat" value="10" id="filter-10" checked>
+               <label for="filter-10">До 10%</label>
+             </li>
+             <li class="fat-filter-item">
+               <input type="radio" name="fat" value="30" id="filter-30">
+               <label for="filter-30">До 30%</label>
+             </li>
+             <li class="fat-filter-item">
+               <input type="radio" name="fat" value="30-over" id="filter-30-over">
+               <label for="filter-30-over">Выше 30%</label>
+             </li>
+           </ul>
+         </div>
        </fieldset>
        <fieldset class="filler-filter">
          <legend>Наполнители:</legend>
-         <ul class="filler-filter-list reset-default-list">
-           <li class="filler-filter-item">
-             <input type="checkbox" name="chocolate" id="filler-filter-chocolate" checked>
-             <label for="filler-filter-chocolate">Шоколадные</label>
-           </li>
-           <li class="filler-filter-item">
-             <input type="checkbox" name="sugar" id="filler-filter-sugar" checked>
-             <label for="filler-filter-sugar">Сахарные присыпки</label>
-           </li>
-           <li class="filler-filter-item">
-             <input type="checkbox" name="fruits" id="filler-filter-fruits">
-             <label for="filler-filter-fruits">Фрукты</label>
-           </li>
-           <li class="filler-filter-item">
-             <input type="checkbox" name="syrup" id="filler-filter-syrup">
-             <label for="filler-filter-syrup">Сиропы</label>
-           </li>
-           <li class="filler-filter-item">
-             <input type="checkbox" name="jam" id="filler-filter-jam">
-             <label for="filler-filter-jam">Джемы</label>
-           </li>
-         </ul>
+         <div class="filter-content">
+           <ul class="filler-filter-list reset-default-list">
+             <li class="filler-filter-item">
+               <input type="checkbox" name="chocolate" id="filler-filter-chocolate" checked>
+               <label for="filler-filter-chocolate">Шоколадные</label>
+             </li>
+             <li class="filler-filter-item">
+               <input type="checkbox" name="sugar" id="filler-filter-sugar" checked>
+               <label for="filler-filter-sugar">Сахарные присыпки</label>
+             </li>
+             <li class="filler-filter-item">
+               <input type="checkbox" name="fruits" id="filler-filter-fruits">
+               <label for="filler-filter-fruits">Фрукты</label>
+             </li>
+             <li class="filler-filter-item">
+               <input type="checkbox" name="syrup" id="filler-filter-syrup">
+               <label for="filler-filter-syrup">Сиропы</label>
+             </li>
+             <li class="filler-filter-item">
+               <input type="checkbox" name="jam" id="filler-filter-jam">
+               <label for="filler-filter-jam">Джемы</label>
+             </li>
+           </ul>
+         </div>
        </fieldset>
-       <button type="submit">Применить</button>
+       <button class="filter-form-submit" type="submit">Применить</button>
      </form>
    </section>
 
@@ -366,7 +373,11 @@
      </ul>
      <ul class="products-pagination reset-default-list">
        <li class="products-pagination-item">
-         <a class="products-pagination-link prev disabled" href="#" aria-label="Предыдущая страница"></a>
+         <a class="products-pagination-link prev disabled" href="#" aria-label="Предыдущая страница">
+           <svg width="8" height="12">
+             <use xlink:href="img/icons/icons-sprite.svg#arrow-right"></use>
+           </svg>
+         </a>
        </li>
        <li class="products-pagination-item">
          <a class="products-pagination-link active" aria-label="Страница 1">1</a>
@@ -384,7 +395,11 @@
          <a class="products-pagination-link" href="#" aria-label="Страница 5">5</a>
        </li>
        <li class="products-pagination-item">
-         <a class="products-pagination-link next" href="#" aria-label="Следующая страница"></a>
+         <a class="products-pagination-link next" href="#" aria-label="Следующая страница">
+           <svg width="8" height="12">
+             <use xlink:href="img/icons/icons-sprite.svg#arrow-right"></use>
+           </svg>
+         </a>
        </li>
      </ul>
    </section>
@@ -394,21 +409,41 @@
   <div class="container">
     <ul class="footer-social reset-default-list">
       <li class="footer-social-item">
-        <a class="footer-social-link" href="#">Твиттер</a>
+        <a class="footer-social-link" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/icons/icons-sprite.svg#social-twitter"></use>
+          </svg>
+          <span class="visually-hidden">Твиттер</span>
+        </a>
       </li>
       <li class="footer-social-item">
-        <a class="footer-social-link" href="#">Инстаграм</a>
+        <a class="footer-social-link" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/icons/icons-sprite.svg#social-inst"></use>
+          </svg>
+          <span class="visually-hidden">Инстаграм</span>
+        </a>
       </li>
       <li class="footer-social-item">
-        <a class="footer-social-link" href="#">Фейсбук</a>
+        <a class="footer-social-link" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/icons/icons-sprite.svg#social-fb"></use>
+          </svg>
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
       </li>
       <li class="footer-social-item">
-        <a class="footer-social-link" href="#">Вконтакте</a>
+        <a class="footer-social-link" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/icons/icons-sprite.svg#social-vk"></use>
+          </svg>
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
       </li>
     </ul>
 
     <ul class="footer-menu reset-default-list">
-      <li class="footer-menu-item">
+      <li class="footer-menu-item footer-menu-item-love">
         <a class="footer-menu-link" href="#">Для поставщиков</a>
       </li>
       <li class="footer-menu-item">
@@ -424,7 +459,7 @@
 
     <div class="footer-copyright">
       <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/content/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        <img src="img/content/logo-htmlacademy.svg" width="108" height="38" alt="Логотип HTML Academy">
       </a>
       <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2020</p>
     </div>
