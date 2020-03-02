@@ -107,8 +107,10 @@
       <ul class="slider-list reset-default-list">
         <li class="slider-item">
           <img class="slider-image" src="img/content/slider-1.png" width="1045" height="881" alt="">
-          <span class="slider-text">Крем-брюле и пломбир<br>с малиновым джемом</span>
-          <button class="btn" type="button" aria-label="Давайте оба! Крем-брюле и пломбир с малиновым джемом">Давайте оба!</button>
+          <p class="slider-item-content">
+            <span class="slider-text">Крем-брюле и пломбир<br>с малиновым джемом</span>
+            <button class="btn" type="button" aria-label="Давайте оба! Крем-брюле и пломбир с малиновым джемом">Давайте оба!</button>
+          </p>
         </li>
         <li class="slider-item">
           <img class="slider-image" src="img/content/slider-2.png" width="1065" height="859" alt="">
@@ -140,12 +142,12 @@
         <li class="action-item action-item-raspberry">
           <h3 class="action-name">Малинка даром!</h3>
           <p class="action-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="btn" href="#">Хочу варенье!</a>
+          <a class="btn btn-action" href="#">Хочу варенье!</a>
         </li>
         <li class="action-item action-item-chocolate">
           <h3 class="action-name">Шоколадки даром!</h3>
           <p class="action-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="btn" href="#">Хочу шоколадки!</a>
+          <a class="btn btn-action" href="#">Хочу шоколадки!</a>
         </li>
       </ul>
     </section>
@@ -333,7 +335,7 @@
   </div>
 </footer>
 
-<div class="modal">
+<div class="modal modal-feedback">
   <form class="form feedback-form" method="post" action="https://echo.htmlacademy.ru">
     <p class="feedback-form-title">Мы обязательно вам ответим!</p>
     <p class="feedback-form-field">
@@ -350,7 +352,7 @@
     </p>
     <button class="btn feedback-form-submit" type="submit">Отправить</button>
   </form>
-  <button type="button" aria-label="Закрыть окно"></button>
+  <button class="form-close feedback-form-close" type="button" aria-label="Закрыть окно"></button>
 </div>
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=a060f0dc-9adb-4d54-a6d2-848cd1609e46"></script>
