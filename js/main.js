@@ -24,3 +24,24 @@ ymaps.ready(function () {
   myMap.geoObjects
     .add(myPlacemark);
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+  var sliderNavBtn = document.querySelectorAll(".slider-navigation-item button");
+  var sliderNavs = document.querySelectorAll(".slider-navigation-item");
+  var sliderItems = document.querySelectorAll(".slider-item");
+
+  sliderNavBtn.forEach(function(sliderBtn) {
+    sliderBtn.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      sliderNavs.forEach(function(sliderNav) {
+        sliderNav.classList.remove('active');
+      });
+      evt.target.parentElement.classList.add('active');
+      sliderItems.forEach(function(sliderItem) {
+        sliderItem.classList.remove('active');
+      });
+      var activeSlide = document.querySelector(".slider-item:nth-child("+evt.target.dataset.element+")");
+      activeSlide.classList.add('active');
+    })
+  });
+});

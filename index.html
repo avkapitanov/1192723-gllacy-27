@@ -99,39 +99,43 @@
   </div>
 </header>
 <main>
-  <div class="container">
+  <div class="container container-front">
     <h1 class="visually-hidden">Глейси - лучшее мороженое в мире</h1>
 
     <section class="best-product-slider">
       <h2 class="visually-hidden">Лучшие предложения</h2>
-      <ul class="slider-list reset-default-list">
-        <li class="slider-item">
+      <ul class="slider-list">
+        <li class="slider-item active">
           <img class="slider-image" src="img/content/slider-1.png" width="1045" height="881" alt="">
           <p class="slider-item-content">
             <span class="slider-text">Крем-брюле и пломбир<br>с малиновым джемом</span>
-            <button class="btn" type="button" aria-label="Давайте оба! Крем-брюле и пломбир с малиновым джемом">Давайте оба!</button>
+            <button class="btn btn-slider-order" type="button" aria-label="Давайте оба! Крем-брюле и пломбир с малиновым джемом">Давайте оба!</button>
           </p>
         </li>
         <li class="slider-item">
           <img class="slider-image" src="img/content/slider-2.png" width="1065" height="859" alt="">
-          <span class="slider-text">Шоколадный пломбир<br>и лимонный сорбет</span>
-          <button class="btn" type="button" aria-label="Давайте оба! Шоколадный пломбир и лимонный сорбет">Давайте оба!</button>
+          <p class="slider-item-content">
+            <span class="slider-text">Шоколадный пломбир<br>и лимонный сорбет</span>
+            <button class="btn btn-slider-order" type="button" aria-label="Давайте оба! Шоколадный пломбир и лимонный сорбет">Давайте оба!</button>
+          </p>
         </li>
         <li class="slider-item">
           <img class="slider-image" src="img/content/slider-3.png" width="1079" height="854" alt="">
-          <span class="slider-text">Пломбир с помадкой<br>и клубничный щербет</span>
-          <button class="btn" type="button" aria-label="Давайте оба! Пломбир с помадкой и клубничный щербет">Давайте оба!</button>
+          <p class="slider-item-content">
+            <span class="slider-text">Пломбир с помадкой<br>и клубничный щербет</span>
+            <button class="btn btn-slider-order" type="button" aria-label="Давайте оба! Пломбир с помадкой и клубничный щербет">Давайте оба!</button>
+          </p>
         </li>
       </ul>
       <ul class="slider-navigation reset-default-list">
-        <li class="slider-navigation-item">
-          <button type="button" aria-label="Первый слайд"></button>
+        <li class="slider-navigation-item active">
+          <button type="button" data-element="1" aria-label="Первый слайд"></button>
         </li>
         <li class="slider-navigation-item">
-          <button type="button" aria-label="Второй слайд"></button>
+          <button type="button" data-element="2" aria-label="Второй слайд"></button>
         </li>
         <li class="slider-navigation-item">
-          <button type="button" aria-label="Третий слайд"></button>
+          <button type="button" data-element="3" aria-label="Третий слайд"></button>
         </li>
       </ul>
     </section>
@@ -257,20 +261,22 @@
 
   <div class="map-contacts-wrapper">
     <div id="map" class="map-wrapper"></div>
-    <section class="contacts-wrapper">
-      <h2 class="visually-hidden">Контактная информация</h2>
-      <p class="contacts-title address-title">
-        Адрес главного офиса<br>
-        и офлайн-магазина:
-      <address class="contacts-address">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</address>
-      </p>
-      <p>
-        <span class="contacts-title">Для заказов по телефону:</span>
-        <a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a>
-        <span class="contacts-time">(с 10 до 20 ежедневно)</span>
-      </p>
-      <a class="btn" href="#">Форма обратной связи</a>
-    </section>
+    <div class="container">
+      <section class="contacts-wrapper">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <p class="contacts-title address-title">
+          Адрес главного офиса<br>
+          и офлайн-магазина:
+        <address class="contacts-address">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</address>
+        </p>
+        <p>
+          <span class="contacts-title">Для заказов по телефону:</span>
+          <a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a>
+          <span class="contacts-time">(с 10 до 20 ежедневно)</span>
+        </p>
+        <a class="btn" href="#">Форма обратной связи</a>
+      </section>
+    </div>
   </div>
 
 </main>
