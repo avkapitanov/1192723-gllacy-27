@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function(){
         sliderItem.classList.remove('active');
       });
       var activeSlide = document.querySelector(".slider-item:nth-child("+evt.target.dataset.element+")");
+      document.body.style['background-color'] = activeSlide.dataset.color;
       activeSlide.classList.add('active');
     })
   });
