@@ -45,4 +45,19 @@ document.addEventListener('DOMContentLoaded', function(){
       activeSlide.classList.add('active');
     })
   });
+
+  var formLink = document.querySelector('.btn-form');
+  var popup = document.querySelector('.modal-feedback');
+  var formClose = document.querySelector('.feedback-form-close');
+
+  formLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+  });
+
+  formClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+
 });

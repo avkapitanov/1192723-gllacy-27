@@ -159,6 +159,17 @@ a:active {
 .main-menu .main-menu-link {
   padding: 7px 14px;
   border-radius: 50px;
+  position: relative;
+}
+
+.main-menu .main-menu-link::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255,255,255,.2);
+  height: 1px;
+  bottom: 6px;
+  left: 14px;
+  right: 14px;
 }
 
 .main-navigation .main-menu-link:hover {
@@ -166,12 +177,9 @@ a:active {
   color: #323232;
 }
 
-.main-menu-link span {
-  border-bottom: 1px solid rgba(255,255,255,.2);
-}
-
-.main-menu-link:hover span {
-  border: none;
+.main-menu-link:hover::after,
+.main-menu-link.active::after{
+  display: none;
 }
 
 .main-menu .main-menu-sub {
@@ -193,8 +201,20 @@ a:active {
 
 .main-menu-sub-item:first-child {
   margin-bottom: 10px;
-  border-bottom: 1px solid rgba(53, 53, 53, .2);
+  /*border-bottom: 1px solid rgba(53, 53, 53, .2);*/
   font-weight: 700;
+  position: relative;
+}
+
+.main-menu-sub-item:first-child::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgba(53, 53, 53, .2);
+  position: absolute;
+  bottom: -1px;
+  left: 6px;
+  right: 9px;
 }
 
 .main-menu-sub .main-menu-sub-link,
@@ -212,7 +232,7 @@ a:active {
 
 .main-menu-sub-link {
   display: block;
-  padding: 7px 20px;
+  padding: 6px 20px;
 }
 
 .main-menu-sub-item:hover {
@@ -532,10 +552,40 @@ a:active {
 .form textarea {
   font-weight: 400;
   color: #999999;
-  border: 1px solid #b2b2b2;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 1pt rgba(178, 178, 178, .52);
   border-radius: 5px;
   padding: 14px;
   width: 100%;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form input[type="text"]:hover,
+.form input[type="password"]:hover,
+.form input[type="email"]:hover,
+.form textarea:hover {
+  box-shadow: 0 0 0 2px rgba(154, 154, 154, .52);
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  box-shadow: 0 0 0 2px rgba(46, 136, 228, .52);
+}
+
+.form input[type="text"]:not(:placeholder-shown),
+.form input[type="password"]:not(:placeholder-shown),
+.form input[type="email"]:not(:placeholder-shown),
+.form textarea:not(:placeholder-shown) {
+  color: #323232;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .modal {
@@ -598,7 +648,8 @@ a:active {
   color: #323232;
 }
 
-.feedback-form input::placeholder{
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
   color: #999999;
 }
 
@@ -931,11 +982,6 @@ a:active {
   padding: 8px;
 }
 
-.search-wrapper:hover form {
-  display: block;
-  z-index: 10;
-}
-
 .search-wrapper::after,
 .auth-wrapper::after,
 .basket-wrapper::after,
@@ -956,9 +1002,11 @@ a:active {
 }
 
 .auth-wrapper:hover form,
-.basket-wrapper:hover .basket-content-wrapper {
+.basket-wrapper:hover .basket-content-wrapper,
+.search-wrapper:hover form{
   display: block;
   z-index: 10;
+  animation: show-up 0.5s ease;
 }
 
 .header-form-auth-field {
@@ -1376,7 +1424,35 @@ input[type="radio"]:checked ~ label::before {
   fill: #ffffff;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
 @keyframes show-up {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
