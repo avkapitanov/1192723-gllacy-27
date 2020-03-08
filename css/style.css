@@ -97,7 +97,7 @@ a:active {
   background: rgb(231, 74, 53) linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border: none;
   border-radius: 50px;
-  box-shadow: 0 2px 0 0 rgb(172, 16, 0, 0.64);
+  box-shadow: 0 2px 0 0 rgba(172, 16, 0, 0.64);
   cursor: pointer;
 }
 
@@ -713,6 +713,7 @@ a:active {
 .feedback-form input[type="text"],
 .feedback-form input[type="email"] {
   width: 267px;
+  height: 44px;
 }
 
 .feedback-form textarea {
@@ -1707,6 +1708,24 @@ input[type="checkbox"]:checked ~ label::before {
   animation: bounce 0.6s;
 }
 
+.modal-show ~ .modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+  animation: show-up 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 @keyframes show-up {
   0% {
     opacity: 0;
@@ -1732,5 +1751,27 @@ input[type="checkbox"]:checked ~ label::before {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
